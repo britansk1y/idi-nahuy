@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>иди нахуй</title>
+    <style>
+        body {
+            background: #0f0f0f;
+            color: #fff;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        button {
+            margin-top: 20px;
+            font-size: 20px;
+            padding: 15px 30px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>иди нахуй</h1>
+    <button onclick="copy()">Скопировать</button>
+
+    <script>
+        function copy() {
+            navigator.clipboard.writeText("иди нахуй");
+            alert("иди нахуй — скопировано");
+        }
+    </script>
+</body>
+</html>
